@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: simpleapp
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: simpleapp
+    spec:
+      containers:
+      - name: simpleapp
+        image: gcr.io/startupcodeoauth/simpleapp:3
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 3000
