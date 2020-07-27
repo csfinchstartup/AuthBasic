@@ -1,3 +1,4 @@
+Use `AuthBasicDB`;
 CREATE TABLE `User` (
   `id` int NOT NULL AUTO_INCREMENT,
   `email` varchar(8000) NOT NULL,
