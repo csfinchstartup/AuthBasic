@@ -18,7 +18,7 @@ services:
       # You must set an URL to access your database. On sequelize (nodejs) it follows this
       # format: db-type://user:password@host:port/database-name
       # the one below is for a MySQL database.
-      DATABASE_URL: mysql://carl:aababot2323@cloud_db:3306/database
+      DATABASE_URL: mysql://carl:aababot2323@cloud_db:3306/AuthDB
     ports:
       - 3000:3000
     depends_on: 
